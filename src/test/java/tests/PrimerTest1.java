@@ -14,13 +14,10 @@ public class PrimerTest1 {
         loginPage.inputLP("222","23123123123");
         Assertions.assertEquals(loginPage.errorAnswer(),"Введите корпоративную почту Andersen");
         loginPage.driverQuit();
+
+
     }
-/*    @Test //АВТОРИЗАЦИЯ ПОЛЬЗОВАТЕЛЯ
-    public void inputLP1() {
-        loginPage.inputLP("huntflow-test-16@andersenlab.com","159753CFThn");
-        Assertions.assertEquals(true,loginPage.firstPage());
-        loginPage.driverQuit();
-    }*/
+
 
 
 }

@@ -52,7 +52,7 @@ public class LoginPage extends InitDriverPrimer {
 
     public void driverQuit(){
         try {
-            Thread.sleep(7000);
+            Thread.sleep(4000);
             driver.quit();
         } catch (InterruptedException e) {
             e.printStackTrace();

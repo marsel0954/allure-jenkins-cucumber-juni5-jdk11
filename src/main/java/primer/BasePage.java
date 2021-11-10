@@ -13,7 +13,6 @@ public class BasePage extends InitDriverPrimer {
     public static final By BUTTON_QUIT = By.className("popupMenu_option__3ZD4c");
     public static final By SETTINGS = By.xpath("//*[@id=\"root\"]/div/nav/div/div[1]/button");
 
-
     public BasePage(WebDriver driver){
         super(driver);
     }
@@ -39,6 +38,7 @@ public class BasePage extends InitDriverPrimer {
         WebElement wait = new WebDriverWait(driver,10)
                 .until(ExpectedConditions.presenceOfElementLocated(By.className("popupMenu_option__3ZD4c")));
         driver.findElement(BUTTON_QUIT).click();
+
     }
 }
 

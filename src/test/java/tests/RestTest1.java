@@ -29,6 +29,9 @@ public class RestTest1 {
         System.out.println("The status code recieved: " + statusCode);
     }
 
+    public void token(){
+    }
+
 
 
 
