@@ -1,3 +1,4 @@
+/*
 package yandexApiTest;
 
 import io.restassured.RestAssured;
@@ -19,7 +20,8 @@ import static io.restassured.RestAssured.given;
 public class TestCase1 {
     @Test
 
- /*   public void createFolder(){
+ */
+/*   public void createFolder(){
         RestAssured.baseURI ="https://cloud-api.yandex.net/v1/disk";
         RequestSpecification request = given();
         JSONObject requestParams = new JSONObject();
@@ -30,7 +32,8 @@ public class TestCase1 {
         Response response = request.put("/resources");
         int statusCode = response.getStatusCode();
         Assertions.assertEquals(statusCode, 200);
-    }*/
+    }*//*
+
 
     public void getFolder(){
         given()
@@ -44,6 +47,7 @@ public class TestCase1 {
                 .when().put()
                 .then().statusCode(201);
     }
+*/
 /*    public int getFolder(){
 
         given()
@@ -61,16 +65,20 @@ public class TestCase1 {
                 .jsonPath()
                 .getInt("size");
 
-    }*/
+    }*//*
 
-    /*public void deleteFolder(){
+
+    */
+/*public void deleteFolder(){
         RestAssured.baseURI = "https://cloud-api.yandex.net/v1/disk";
         RequestSpecification request = RestAssured.given();
         request.header("Content-Type", "application/json");
-    }*/
+    }*//*
+
 
 
 
 
 
 }
+*/
