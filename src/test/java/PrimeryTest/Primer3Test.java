@@ -1,11 +1,11 @@
-package tests;
+package PrimeryTest;
 
 
 import org.junit.jupiter.api.Test;
 import primer.InitDriverPrimer;
 import primer.LoginPage;
 
-public class PrimerTest3 {
+public class Primer3Test {
     LoginPage loginPage = new LoginPage(InitDriverPrimer.getDriver());
 
     @Test //ОТОБРАЖЕНИЕ ФУНКЦИОНАЛЬНОСТИ КНОПКИ "ГЛАЗИК" НА СТРАНИЦЕ АВТОРИЗАЦИИ

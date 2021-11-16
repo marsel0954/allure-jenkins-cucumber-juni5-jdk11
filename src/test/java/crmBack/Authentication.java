@@ -1,15 +1,11 @@
-package crmBackTest;
+package crmBack;
 
 import io.restassured.RestAssured;
-import io.restassured.builder.RequestSpecBuilder;
-import io.restassured.filter.log.LogDetail;
-import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import org.junit.jupiter.api.Test;
 
-public class TestAuthentication {
+public class Authentication {
 
 
     public String tokenAuthROS(){

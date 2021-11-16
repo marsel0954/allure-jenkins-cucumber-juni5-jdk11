@@ -1,13 +1,10 @@
-/*
 package yandexApiTest;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import org.checkerframework.checker.units.qual.C;
 import org.json.JSONObject;
-import org.junit.Assert;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
@@ -20,8 +17,7 @@ import static io.restassured.RestAssured.given;
 public class TestCase1 {
     @Test
 
- */
-/*   public void createFolder(){
+   public void createFolder(){
         RestAssured.baseURI ="https://cloud-api.yandex.net/v1/disk";
         RequestSpecification request = given();
         JSONObject requestParams = new JSONObject();
@@ -32,23 +28,11 @@ public class TestCase1 {
         Response response = request.put("/resources");
         int statusCode = response.getStatusCode();
         Assertions.assertEquals(statusCode, 200);
-    }*//*
+    }
+
 
 
     public void getFolder(){
-        given()
-                .log().all()
-                .baseUri("https://cloud-api.yandex.net/v1/disk")
-                .basePath("/resources")
-                .param("path","12333333d")
-                .header("Content-Type","application/json")
-                .header("Authorization","OAuth AQAAAAA2st_CAADLW5TP1mAo4UEzlb-ppP50raY")
-                .contentType(ContentType.JSON)
-                .when().put()
-                .then().statusCode(201);
-    }
-*/
-/*    public int getFolder(){
 
         given()
                 .log().all()
@@ -65,15 +49,14 @@ public class TestCase1 {
                 .jsonPath()
                 .getInt("size");
 
-    }*//*
+    }
 
 
-    */
-/*public void deleteFolder(){
+public void deleteFolder(){
         RestAssured.baseURI = "https://cloud-api.yandex.net/v1/disk";
         RequestSpecification request = RestAssured.given();
         request.header("Content-Type", "application/json");
-    }*//*
+    }
 
 
 
@@ -81,4 +64,3 @@ public class TestCase1 {
 
 
 }
-*/

@@ -1,4 +1,4 @@
-package tests;
+package PrimeryTest;
 
 
 import org.junit.jupiter.api.Assertions;
@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import primer.InitDriverPrimer;
 import primer.LoginPage;
 
-public class PrimerTest1 {
+public class PrimerTest {
     LoginPage loginPage = new LoginPage(InitDriverPrimer.getDriver());
 
     @Test//ПРОВЕРКА ОБРАБОТКИ ОЩИБКИ НЕПРАВИЛЬНОГО ЛОГИНА

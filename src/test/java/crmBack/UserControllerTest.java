@@ -1,4 +1,4 @@
-package crmBackTest;
+package crmBack;
 
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class UserController extends TestAuthentication {
+public class UserControllerTest extends Authentication {
 
     RequestSpecification requestSpec = new RequestSpecBuilder()
             .setBaseUri("http://10.10.15.160:8080/api")
