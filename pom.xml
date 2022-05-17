@@ -126,9 +126,12 @@
                     <argLine>
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                     </argLine>
-                    <systemPropertyVariables>
-                        <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
-                    </systemPropertyVariables>
+                    <systemProperties>
+                        <property>
+                            <name>allure.results.directory</name>
+                            <value>C:\Users\anduser\IdeaProjects\allure-jenkins-cucumber-juni5-jdk11\target\allure-results</value>
+                        </property>
+                    </systemProperties>
                 </configuration>
                 <dependencies>
                     <dependency>
@@ -156,6 +159,7 @@
                     <reportVersion>${allure.version}</reportVersion>
                     <allureDownloadUrl> </allureDownloadUrl>
                 </configuration>
+
             </plugin>
 
         </plugins>
