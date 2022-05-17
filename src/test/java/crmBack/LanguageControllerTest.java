@@ -7,6 +7,7 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 
 import static io.restassured.RestAssured.given;
 
@@ -26,6 +27,8 @@ public class LanguageControllerTest extends Authentication {
             .build();
 
     @Test
+    @Timeout(10)
+
     public void getAllLanguageByROSadmin() {
         given()
                 .spec(requestSpec)
@@ -47,6 +50,8 @@ public class LanguageControllerTest extends Authentication {
                 .statusCode(200);
     }*/
     @Test
+    @Timeout(10)
+
     public void getAllLanguageByROS() {
         given()
                 .spec(requestSpec)
@@ -58,6 +63,8 @@ public class LanguageControllerTest extends Authentication {
     }
 
     @Test
+    @Timeout(10)
+
     public void getAllLanguageBySOS() {
         given()
                 .spec(requestSpec)
@@ -69,6 +76,8 @@ public class LanguageControllerTest extends Authentication {
     }
 
     @Test
+    @Timeout(10)
+
     public void getAllLanguageByVP() {
         given()
                 .spec(requestSpec)
@@ -80,6 +89,8 @@ public class LanguageControllerTest extends Authentication {
     }
 
     @Test
+    @Timeout(10)
+
     public void putLanguageByROSadmin() {
         given()
                 .spec(requestSpec)
@@ -91,6 +102,8 @@ public class LanguageControllerTest extends Authentication {
     }
 
     @Test
+    @Timeout(10)
+
     public void putLanguageByROS() {
         given()
                 .spec(requestSpec)
@@ -102,6 +115,8 @@ public class LanguageControllerTest extends Authentication {
     }
 
     @Test
+    @Timeout(10)
+
     public void putLanguageBySOS() {
         given()
                 .spec(requestSpec)
@@ -113,6 +128,8 @@ public class LanguageControllerTest extends Authentication {
     }
 
     @Test
+    @Timeout(10)
+
     public void putLanguageByVP() {
         given()
                 .spec(requestSpec)

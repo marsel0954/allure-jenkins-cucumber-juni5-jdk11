@@ -8,6 +8,7 @@ import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 
 import static io.restassured.RestAssured.given;
 
@@ -49,6 +50,8 @@ public class UserControllerTest extends Authentication {
 
 
     @Test
+    @Timeout(10)
+
     public void getAllActiveUsersByROS() {
         given()
                 .spec(requestSpec)
@@ -62,6 +65,8 @@ public class UserControllerTest extends Authentication {
     }
     @DisplayName("Получение данных о всех удаленных пользователях")
     @Test
+    @Timeout(10)
+
     public void getAllRemovedUsersByROS(){
         given()
                 .spec(requestSpec)
@@ -74,6 +79,8 @@ public class UserControllerTest extends Authentication {
                 .statusCode(200);
     }
     @Test
+    @Timeout(10)
+
     public void putUserByROS() {
         given()
                 .spec(requestSpec)
@@ -86,6 +93,9 @@ public class UserControllerTest extends Authentication {
     }
 
     @Test
+    @Timeout(10)
+
+
     public void postCreateUserByROS() {
         given()
                 .spec(requestSpec)
@@ -97,6 +107,8 @@ public class UserControllerTest extends Authentication {
                 .statusCode(200);
     }
     @Test
+    @Timeout(10)
+
     public void deleteUserByROS(){
         given()
                 .spec(requestSpec)
@@ -119,6 +131,8 @@ public class UserControllerTest extends Authentication {
                 .statusCode(200);
     }
     @Test
+    @Timeout(10)
+
     public void getAllExternalUsersByROS(){
         given()
                 .spec(requestSpec)
@@ -130,6 +144,8 @@ public class UserControllerTest extends Authentication {
                 .statusCode(200);
     }
     @Test
+    @Timeout(10)
+
     public void getAllExternalUsersByROSadmin(){
         given()
                 .spec(requestSpec)
