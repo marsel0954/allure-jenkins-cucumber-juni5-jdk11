@@ -6,6 +6,7 @@ import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
+import org.junit.Ignore;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
@@ -51,6 +52,8 @@ public class UserControllerTest extends Authentication {
 
     @Test
     @Timeout(10)
+    @Ignore
+
 
     public void getAllActiveUsersByROS() {
         given()
@@ -66,6 +69,8 @@ public class UserControllerTest extends Authentication {
     @DisplayName("Получение данных о всех удаленных пользователях")
     @Test
     @Timeout(10)
+    @Ignore
+
 
     public void getAllRemovedUsersByROS(){
         given()
@@ -80,6 +85,8 @@ public class UserControllerTest extends Authentication {
     }
     @Test
     @Timeout(10)
+    @Ignore
+
 
     public void putUserByROS() {
         given()
@@ -94,6 +101,8 @@ public class UserControllerTest extends Authentication {
 
     @Test
     @Timeout(10)
+    @Ignore
+
 
 
     public void postCreateUserByROS() {
@@ -108,6 +117,8 @@ public class UserControllerTest extends Authentication {
     }
     @Test
     @Timeout(10)
+    @Ignore
+
 
     public void deleteUserByROS(){
         given()
@@ -132,6 +143,8 @@ public class UserControllerTest extends Authentication {
     }
     @Test
     @Timeout(10)
+    @Ignore
+
 
     public void getAllExternalUsersByROS(){
         given()
@@ -145,6 +158,8 @@ public class UserControllerTest extends Authentication {
     }
     @Test
     @Timeout(10)
+    @Ignore
+
 
     public void getAllExternalUsersByROSadmin(){
         given()

@@ -5,6 +5,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import org.json.JSONObject;
+import org.junit.Ignore;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
@@ -16,6 +17,8 @@ import static io.restassured.RestAssured.given;
 public class RestTest1 {
     @Test
     @Timeout(10)
+    @Ignore
+
 
     public void lastTry() {
         RestAssured.baseURI ="http://10.10.15.160:8080/api";
@@ -36,6 +39,8 @@ public class RestTest1 {
 
     @Test
     @Timeout(10)
+    @Ignore
+
 
     public void takeToken() {
         RestAssured.baseURI="http://10.10.15.160:8080/api";
@@ -55,6 +60,10 @@ public class RestTest1 {
 
 
     @Test
+    @Ignore
+    @Timeout(10)
+
+
     public void postToker() {
         String someRandomString = String.format("%1$TH%1$TM%1$TS", new Date());
         JSONObject requestBody = new JSONObject();
@@ -69,6 +78,12 @@ public class RestTest1 {
         System.out.println("The status code recieved: " + statusCode);
     }
     @Test
+    @Timeout(10)
+    @Ignore
+
+
+
+
     public void getUsers() {
         given()
                 .baseUri("http://10.10.15.160:8080/api")

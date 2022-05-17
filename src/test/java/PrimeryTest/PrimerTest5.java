@@ -1,6 +1,7 @@
 package PrimeryTest;
 
 
+import org.junit.Ignore;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
@@ -12,6 +13,8 @@ public class PrimerTest5 {
 
     @Test // ПОИСК ЭДЕМЕНТА НА СТРАНИЦЕ АВТОРИЗАЦИИ
     @Timeout(10)
+    @Ignore
+
 
     public void inputLP() {
         Assertions.assertEquals(true,loginPage.findButton());

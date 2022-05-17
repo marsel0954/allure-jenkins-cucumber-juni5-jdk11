@@ -1,6 +1,7 @@
 package PrimeryTest;
 
 
+import org.junit.Ignore;
 import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
@@ -12,6 +13,8 @@ public class Primer3Test {
 
     @Test //ОТОБРАЖЕНИЕ ФУНКЦИОНАЛЬНОСТИ КНОПКИ "ГЛАЗИК" НА СТРАНИЦЕ АВТОРИЗАЦИИ
     @Timeout(10)
+    @Ignore
+
     public void inputLP() {
         loginPage.inputLP("222","23123123123");
         loginPage.eyeButton();

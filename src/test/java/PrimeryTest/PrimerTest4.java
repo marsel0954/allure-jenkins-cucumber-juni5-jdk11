@@ -1,6 +1,7 @@
 package PrimeryTest;
 
 
+import org.junit.Ignore;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
@@ -14,6 +15,8 @@ public class PrimerTest4 {
 
     @Test //ВХОД И ВЫХОД С САЙТА
     @Timeout(10)
+    @Ignore
+
 
     public void inputLP(){
         loginPage.inputLP("huntflow-test-16@andersenlab.com","159753CFThn");

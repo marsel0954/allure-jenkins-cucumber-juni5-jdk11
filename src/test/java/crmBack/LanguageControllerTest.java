@@ -6,6 +6,7 @@ import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
+import org.junit.Ignore;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
 
@@ -28,6 +29,8 @@ public class LanguageControllerTest extends Authentication {
 
     @Test
     @Timeout(10)
+    @Ignore
+
 
     public void getAllLanguageByROSadmin() {
         given()
@@ -51,6 +54,8 @@ public class LanguageControllerTest extends Authentication {
     }*/
     @Test
     @Timeout(10)
+    @Ignore
+
 
     public void getAllLanguageByROS() {
         given()
@@ -64,6 +69,8 @@ public class LanguageControllerTest extends Authentication {
 
     @Test
     @Timeout(10)
+    @Ignore
+
 
     public void getAllLanguageBySOS() {
         given()
@@ -77,6 +84,8 @@ public class LanguageControllerTest extends Authentication {
 
     @Test
     @Timeout(10)
+    @Ignore
+
 
     public void getAllLanguageByVP() {
         given()
@@ -90,6 +99,8 @@ public class LanguageControllerTest extends Authentication {
 
     @Test
     @Timeout(10)
+    @Ignore
+
 
     public void putLanguageByROSadmin() {
         given()
@@ -103,6 +114,8 @@ public class LanguageControllerTest extends Authentication {
 
     @Test
     @Timeout(10)
+    @Ignore
+
 
     public void putLanguageByROS() {
         given()
@@ -116,6 +129,8 @@ public class LanguageControllerTest extends Authentication {
 
     @Test
     @Timeout(10)
+    @Ignore
+
 
     public void putLanguageBySOS() {
         given()
@@ -129,6 +144,8 @@ public class LanguageControllerTest extends Authentication {
 
     @Test
     @Timeout(10)
+    @Ignore
+
 
     public void putLanguageByVP() {
         given()
