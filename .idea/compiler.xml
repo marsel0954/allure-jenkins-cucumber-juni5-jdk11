@@ -7,8 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="allure-jenkins-cucumber" />
-        <module name="allure-jenkins-cucumber-juni5-jdk11" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="allure-jenkins-cucumber" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
