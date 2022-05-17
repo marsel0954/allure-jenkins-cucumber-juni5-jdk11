@@ -101,6 +101,8 @@
 
 
 
+
+
     </dependencies>
 
     <build>
@@ -115,6 +117,7 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -148,9 +151,10 @@
                 <version>2.10.0</version>
                 <configuration>
                     <reportVersion>${allure.version}</reportVersion>
-                    <allureDownloadUrl>https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/${allure.version}/allure-commandline-${allure.version}.zip</allureDownloadUrl>
+                    <allureDownloadUrl> </allureDownloadUrl>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
 </project>
