@@ -7,6 +7,7 @@ import io.restassured.specification.RequestSpecification;
 import org.json.JSONObject;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 
 import java.util.Date;
 
@@ -14,6 +15,8 @@ import static io.restassured.RestAssured.given;
 
 public class RestTest1 {
     @Test
+    @Timeout(10)
+
     public void lastTry() {
         RestAssured.baseURI ="http://10.10.15.160:8080/api";
         RequestSpecification request = RestAssured.given();
@@ -29,18 +32,11 @@ public class RestTest1 {
         System.out.println("The status code recieved: " + statusCode);
     }
 
-    public void token(){
-    }
-
-
-
-
-
-
-
 
 
     @Test
+    @Timeout(10)
+
     public void takeToken() {
         RestAssured.baseURI="http://10.10.15.160:8080/api";
         String danjson = "{\n" +

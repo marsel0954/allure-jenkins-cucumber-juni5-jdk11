@@ -3,6 +3,7 @@ package PrimeryTest;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 import primer.BasePage;
 import primer.InitDriverPrimer;
 import primer.LoginPage;
@@ -12,6 +13,8 @@ public class PrimerTest4 {
     BasePage basePage =  new BasePage(InitDriverPrimer.getDriver());
 
     @Test //ВХОД И ВЫХОД С САЙТА
+    @Timeout(10)
+
     public void inputLP(){
         loginPage.inputLP("huntflow-test-16@andersenlab.com","159753CFThn");
         basePage.sidebararrowclick();

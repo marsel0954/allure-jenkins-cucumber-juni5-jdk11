@@ -7,6 +7,8 @@ import io.restassured.specification.RequestSpecification;
 import org.json.JSONObject;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
+
 import static io.restassured.RestAssured.given;
 
 
@@ -16,8 +18,11 @@ import static io.restassured.RestAssured.given;
 
 public class TestCase1 {
     @Test
+    @Timeout(10)
 
-   public void createFolder(){
+
+
+    public void createFolder(){
         RestAssured.baseURI ="https://cloud-api.yandex.net/v1/disk";
         RequestSpecification request = given();
         JSONObject requestParams = new JSONObject();

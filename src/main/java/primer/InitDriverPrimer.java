@@ -10,7 +10,7 @@ public class InitDriverPrimer {
     public static void initDriver(){
         System.setProperty(
                 "webdriver.chrome.driver",
-                "C:\\Program Files\\Java\\myJavaProject\\JavaLessons\\src\\main\\resources\\chromedriver.exe"
+                "C:\\Users\\anduser\\IdeaProjects\\allure-jenkins-cucumber-juni5-jdk11\\src\\main\\resources\\chromedriver.exe"
         );
 
         driver = new ChromeDriver();
