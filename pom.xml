@@ -129,7 +129,7 @@
                     <systemProperties>
                         <property>
                             <name>allure.results.directory</name>
-                            <value>C:\ProgramData\Jenkins\.jenkins\workspace\testrun1\allure-results</value>
+                            <value>C:\ProgramData\Jenkins\.jenkins\workspace\selenoid\target\allure-results</value>
                         </property>
                     </systemProperties>
                 </configuration>
